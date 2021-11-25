@@ -1,0 +1,32 @@
+.note{
+    padding: 25px;
+    height: 280px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(64, 43, 83);
+    border-radius: 25px;
+}
+.note-text{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    resize: none;
+    font-size: 1rem;
+    line-height: 1.875rem;
+}
+
+.note-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.note-footer .deleteIcon{
+    opacity: 0;
+    transition: 300ms;
+    
+}
+.note:hover .note-footer .deleteIcon{
+    opacity: 1;
+}
